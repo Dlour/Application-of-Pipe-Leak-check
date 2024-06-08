@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/notif_shape"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/gambarnotif"
+        android:src="@drawable/baseline_notifications_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ada Kebocoran di Pipa Anda!"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:id="@+id/textNotif"
+        android:layout_toEndOf="@id/gambarnotif"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saat ini"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textNotif"
+        android:layout_toEndOf="@id/gambarnotif"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/time"/>
+    
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/baseline_circle_24"
+        android:layout_toEndOf="@id/textNotif"
+        android:layout_alignTop="@id/textNotif"
+        android:id="@+id/circlenotif"
+        android:layout_marginStart="51dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

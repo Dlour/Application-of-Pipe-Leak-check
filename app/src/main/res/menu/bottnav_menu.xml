@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:title="All" android:icon="@drawable/circle_before"
+        android:id="@+id/all"/>
+    <item android:title="Tagihan" android:id="@+id/tagihan" android:icon="@drawable/circle_before"/>
+    <item android:title="Informasi" android:id="@+id/informasi" android:icon="@drawable/circle_before"/>
+</menu>

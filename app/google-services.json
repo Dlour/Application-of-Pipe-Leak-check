@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "766917400012",
+    "project_id": "uasiot-77ded",
+    "storage_bucket": "uasiot-77ded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766917400012:android:f51a0ea2b773ffd093f969",
+        "android_client_info": {
+          "package_name": "com.example.uasiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxF78PnBb14lCTxTQHqOmmczI1WU15WDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

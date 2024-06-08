@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE8F1"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@drawable/main_bckgrnd"
+        android:id="@+id/header"
+        >
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/user_name"
+            android:layout_marginTop="33dp"
+            android:layout_marginStart="33dp"/>
+
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notif"
+            android:layout_toEndOf="@id/user_name"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/notif"/>
+
+        <View
+            android:id="@+id/notifIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/circle_red"
+            android:layout_marginTop="28dp"
+            android:visibility="visible"
+
+            app:layout_constraintEnd_toEndOf="@id/notif"
+            app:layout_constraintTop_toTopOf="@id/notif"/>
+
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/broken_pipa2"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="99dp"
+            android:id="@+id/pipabocor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMART \nWATER METER"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="26dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="33dp"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    bottom navigator-->
+    <LinearLayout
+        android:id="@+id/topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="310dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/allbtn"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/circle_after"
+            android:id="@+id/allicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:textColor="#004481"
+                android:textSize="27dp"
+                android:id="@+id/allText"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:id="@+id/tagihanbtn"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="45dp"
+                android:src="@drawable/circle_before"
+                android:id="@+id/tagihanicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counter A"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#8DA9B1"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="27dp"
+                android:id="@+id/tagihanText"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:id="@+id/informasibtn">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/informasiicon"
+            android:layout_marginStart="45dp"
+            android:src="@drawable/circle_before"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter B"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:id="@+id/informasiText"
+            android:layout_marginTop="5dp"
+            android:textColor="#8DA9B1"/>
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+<!--    end of bottom navigator-->
+
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@id/topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_home"
+        android:layout_height="466dp">
+    </FrameLayout>
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

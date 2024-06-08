@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/gambariot"
+        android:layout_marginTop="92dp"
+        android:id="@+id/gambarLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/gambarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="64dp"
+        android:text="LOGIN"
+        android:letterSpacing="0.10"
+        android:id="@+id/textLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di Aplikasi Smart Water Meter"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@id/textLogin"
+        app:layout_constraintStart_toStartOf="@id/textLogin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textWelcome"/>
+
+
+            <EditText
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/textWelcome"
+                app:layout_constraintStart_toStartOf="@id/textWelcome"
+                android:background="@drawable/box_login2"
+                android:layout_marginTop="23dp"
+                android:id="@+id/usernamebox"
+                android:hint="Username"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="11dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/person_login"
+                android:drawableTint="@color/black"
+                android:paddingStart="20dp"
+                android:drawablePadding="18dp"/>
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/usernamebox"
+        app:layout_constraintStart_toStartOf="@id/usernamebox"
+        android:background="@drawable/box_login2"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="11dp"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/password_vector"
+        android:paddingStart="20dp"
+        android:drawablePadding="18dp"
+        android:id="@+id/passwordbox"/>
+    
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordbox"
+        app:layout_constraintStart_toStartOf="@id/passwordbox"
+        android:background="@drawable/box_button"
+        android:text="LOGIN"
+        android:letterSpacing="0.10"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="12dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/btnLogin"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

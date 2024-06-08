@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:id="@+id/topbarnotif"
+        android:orientation="horizontal"
+        android:background="@drawable/topbarnotif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="42dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:id="@+id/back"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="27dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="34dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/topbarnotif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/topbarrec"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Notification"
+            android:layout_marginStart="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#017BB1"
+            android:textSize="18dp"
+            android:id="@+id/clearnotif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read All"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#017BB1"
+            android:textSize="18dp"
+            android:layout_marginStart="100dp"
+            android:id="@+id/readNotif"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/topbarrec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/recnotif"/>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
